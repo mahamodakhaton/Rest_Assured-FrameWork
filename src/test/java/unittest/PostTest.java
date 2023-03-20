@@ -23,7 +23,7 @@ public class PostTest {
 	.log().all()
 	.statusCode(201);
 	}
-	@Test(enabled = true, priority = 2)//no run
+	@Test(enabled = true, priority = 2)
 	public void postTestStringBody400() {
 		RestAssured.given()
 	.baseUri("https://reqres.in/ap/useer")
@@ -38,7 +38,7 @@ public class PostTest {
 	.statusCode(404);
 	
 	}	
-		@Test (enabled = true, priority = 3)//run fail
+		@Test (enabled = true, priority = 3)
 		public void postTestFileBody500() {
 			RestAssured.given()
 		.baseUri("https://reqres.in/api/users")
@@ -85,7 +85,7 @@ public class PostTest {
 			e.printStackTrace();
 		}
 		}
-		@Test (enabled = true, priority = 6)//it was pass but i didnot follow get call
+		@Test (enabled = true, priority = 6)
 		public void postTestMapBody() {
 			Map<String, Object> map = new HashMap<>();
 			map.put("firstName", "Mahamoda");

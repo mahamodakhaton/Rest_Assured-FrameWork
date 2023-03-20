@@ -41,7 +41,7 @@ System.out.println(response.asString());
  .statusCode(200);
  
 	}
-	@Test(enabled = true, priority = 6)//id is null
+	@Test(enabled = true, priority = 6)
 	public void getlistusersResponseValidation() {
  RestAssured.given()
  .log().all()
